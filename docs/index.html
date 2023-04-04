@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <style>
+        body {
+            background-color: white;
+            padding: 100px;
+            width: 1000px;
+            margin: auto;
+            text-align: left;
+            font-weight: 300;
+            font-family: 'Open Sans', sans-serif;
+            color: #121212;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        kbd {
+            color: #121212;
+        }
+    </style>
+    <title>CS 184 Mesh Edit</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+
+</head>
+<body>
+<br />
+<h1 align="middle">Final Project: Tattoo Renderer </h1>
+<h2 align="middle">Team Members: Isabelle Liu, Jojo Chen, Michelle Chen, Nicholas Cheng</h2>
+<h2 align="middle">(Webpage URL)</h2>
+
+<div class="padded">
+
+
+    <h3 align="middle">Summary</h3>
+    <p>
+        In this project, we will explore non-photorealistic rendering to create a tool for tattoo artists to easily generate designs in different tattoo styles. By altering how light is rendered in a typical photorealistic manner we have learned in class, we will create more expressive and artistic images in a sketch, stick & poke, chrome, and american traditional tattoo styles.
+    </p>
+
+
+    <h3 align="middle">Problem Description</h3>
+    <p><b>
+    </b></p>
+    <p>
+        After a recent binge of the popular series Ink Master, in which tattoo artists are challenged on both their creativity and their technical skills, we recognize the difficulty of exploring different styles. Depending on an artist's creation, one thing that may really help is developing the skill to ink different styles, but creating stencils takes a lot of time and energy that artists may not have. By creating a texture pack in which artists can easily switch through different styles, we are offering a great resource that practicing tattoo artists can utilize. We’re hoping to solve it by giving a user-friendly interface that will allow a user to easily switch the style of an image. To create the difference in our textures, we can customize the textures, lighting and meshes of the images to create a handful of different styles!
+    </p>
+
+
+    <h3 align="middle">Goals and Deliverables</h3>
+
+    <p><b><i>
+        How might we use digital rendering to make tattoo art more easily?
+    </i></b></p>
+    <p>
+        Our goal is to create a tool that allows users to switch between four different rendering styles: sketch, stick & poke, chrome, and American traditional.
+    </p>
+
+    <br>
+    <p><b>
+        Show the *probability_debug.png* file for the *.exr* file you are using, generated using the `save_probability_debug()` helper function after initializing your probability distributions.
+    </b></p>
+    <p>
+        Your response goes here.
+    </p>
+    <br>
+    <p><b>
+        Use the `bunny_unlit.dae` scene and your environment map *.exr* file and render two pictures, one with uniform sampling and one with importance sampling. Use 4 samples per pixel and 64 samples per light in each. Compare noise levels. Make sure to include all screenshots.
+    </b></p>
+    <p>
+        Your response goes here.
+    </p>
+    <br>
+    <p><b>
+        Use a different image (if you did part 2, we recommend `bunny_microfacet_cu_unlit.dae`) and your environment map *.exr* file and render two pictures, one with uniform sampling and one with importance sampling. Use 4 samples per pixel and 64 samples per light in each. Compare noise levels. Make sure to include all screenshots.
+    </b></p>
+    <p>
+        Your response goes here.
+    </p>
+    <br>
+
+
+
+    <h3 align="middle">Part 4. Depth of Field</h3>
+    <b>
+        For these subparts, we recommend using a microfacet BSDF scene to show off the cool out of focus effects you can get with depth of field!
+    </b>
+    <p><b>
+        In a few sentences, explain the differences between a pinhole camera model and a thin-lens camera model.
+    </b></p>
+    <p>
+        Your response goes here.
+    </p>
+    <br>
+    <p><b>
+        Show a "focus stack" where you focus at 4 visibly different depths through a scene. Make sure to include all screenshots.
+    </b></p>
+    <p>
+        Your response goes here.
+    </p>
+    <br>
+    <p><b>
+        Show a sequence of 4 pictures with visibly different aperture sizes, all focused at the same point in a scene. Make sure to include all screenshots.
+    </b></p>
+    <p>
+        Your response goes here.
+    </p>
+    <br>
+
+</div>
+</body>
+</html>
+
