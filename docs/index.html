@@ -67,56 +67,173 @@
         Our goal is to create a tool that allows users to switch between four different rendering styles: sketch, stick & poke, chrome, and American traditional.
     </p>
 
+        <table style="width:100%">
+            <tr align="center">
+                <td>
+                    <img src="images/sketch1.jpg" align="middle" width="400px"/>
+                    <figcaption>sketched owl</figcaption>
+                </td>
+                <td>
+                    <img src="images/sketch2.png" align="middle" width="300px"/>
+                    <figcaption>sketched man with bear hat</figcaption>
+                </td>
+                <p align = "left">The sketch tattoo style is similar to what one may find in an artist’s sketchbook. Images are created with lines and a variety of shading methods such as cross hatching. Different types of strokes are used to create different textures. </p>
+            </tr>
+        </table>
+        <table style = "width:100%">
+            <tr align="center">
+                <td>
+                    <img src="images/poke.png" align="middle" width="400px"/>
+                    <figcaption>stick and poke flower</figcaption>
+                </td>
+                <td>
+                    <img src="images/poke2.jpg" align="middle" width="400px"/>
+                    <figcaption>stick and poke sphere</figcaption>
+                </td>
+            </tr>
+            <p align="left"> The stick and poke method of tattooing creates individual dots of varying distances apart from each other, creating the illusion of shading. This technique may or may not include a clear outline. </p>
+
+        </table>
+    <table style = "width:100%">
+        <p align="left">Chrome style tattoos usually consist of bold, metallic designs with shiny surfaces. The creation of these tattoos usually come from different forms of shading, highlights, and fine details to produce 3-D metal effects.</p>
+        <tr align="center">
+            <td>
+                <img align = "center" src="images/chrome.png" align="middle" width="800px"/>
+                <figcaption>chrome tiger, skull, and spider</figcaption>
+            </td>
+        </tr>
+    </table>
+    <table style = "width:100%">
+        <p align = "left">American traditional tattoos can be differentiated by the use of bold, thick outlines and stark contrast of solid black and limited palette of bright colors (but mainly red, greens and yellows). You’ll also notice that although there is nice shading in most, there’s a tendency to simplify lighting, making the designs look more 2D. </p>
+        <tr align="center">
+            <td>
+                <img src="images/american1.png" align="middle" width="400px"/>
+                <figcaption>american traditional sleeve</figcaption>
+            </td>
+            <td>
+                <img src="images/american2.png" align="middle" width="300px"/>
+                <figcaption>american traditional birds</figcaption>
+            </td>
+        </tr>
+    </table>
     <br>
     <p><b>
-        Show the *probability_debug.png* file for the *.exr* file you are using, generated using the `save_probability_debug()` helper function after initializing your probability distributions.
+        Measuring Quality
     </b></p>
     <p>
-        Your response goes here.
+        We will measure the quality of our tool examining the rendering results on a variety of images with different levels of detail. Though it is difficult to quantify how successful our model is in terms of accurately representing the different tattoo styles, visual examination should allow us to determine the relative success of our rendering tool.
     </p>
     <br>
     <p><b>
-        Use the `bunny_unlit.dae` scene and your environment map *.exr* file and render two pictures, one with uniform sampling and one with importance sampling. Use 4 samples per pixel and 64 samples per light in each. Compare noise levels. Make sure to include all screenshots.
+        Aspirational Deliverables
     </b></p>
     <p>
-        Your response goes here.
+        1. Adding customization: One way we would improve our tool if we have time is to give the user options to customize the styles we have already implemented. For example, we could allow the user to set different levels of line weights for the sketch style. We could also give the user the option to include an outline or not for the stick and poke style.
     </p>
-    <br>
-    <p><b>
-        Use a different image (if you did part 2, we recommend `bunny_microfacet_cu_unlit.dae`) and your environment map *.exr* file and render two pictures, one with uniform sampling and one with importance sampling. Use 4 samples per pixel and 64 samples per light in each. Compare noise levels. Make sure to include all screenshots.
-    </b></p>
     <p>
-        Your response goes here.
+        2. Implementing additional styles: If we had more time, we could also implement additional tattoo styles, including new school tattoos, watercolor, painting, realism, etc.
     </p>
-    <br>
 
 
 
-    <h3 align="middle">Part 4. Depth of Field</h3>
+    <h3 align="middle">Schedule</h3>
     <b>
         For these subparts, we recommend using a microfacet BSDF scene to show off the cool out of focus effects you can get with depth of field!
     </b>
+    <p>WEEK 1 (4/10-4/16)</p>
+    <ul>
+        <li> Setup and initial research:
+            <ul>
+                <li>Be able to render realistic meshes (Projects 2 - 3)</li>
+                <li>Make additional modifications to the project 3 codebase to remove unnecessary features and optimize</li>
+                <li>Research examples of various art styles and identify key features. Prepare input .dae files and mock-up desired results.</li>
+            </ul>
+        </li>
+    </ul>
+    <p>WEEK 2 (4/17-4/23)</p>
+    <ul>
+        <li> Work with basic shapes (ie. sphere, cube, apple) </li>
+        <li> For all styles, generate images with bold line outlines</li>
+        <li> Sketch + Stick & Poke
+            <ul>
+                <li>Be able to render images in black and white</li>
+                <li>Begin implementing hatch/stippling shading techniques</li>
+            </ul>
+        </li>
+        <li> Chrome + American Traditional
+            <ul>
+                <li>Begin working on color adjustments and gradients</li>
+            </ul>
+        </li>
+    </ul>
+    <p>WEEK 3 (4/24-4/30)</p>
+    <ul>
+        <li> Be able to render simple or medium complexity images with the basic features of each art style:
+            <ul>
+                <li> Sketch:
+                    <ul>
+                        <li>Hatching and cross-hatching shading</li>
+                        <li>Lines and (possibly) varying line weights</li>
+                    </ul>
+
+                </li>
+                <li> Stick & Poke:
+                    <ul>
+                        <li>Outlines and stipple shading</li>
+                    </ul>
+                </li>
+                <li> Chrome:
+                    <ul>
+                        <li>Bold outlines, reflective/metallic shading and highlights</li>
+                        <li>Smooth color gradients
+                        </li>
+                    </ul>
+                </li>
+                <li> American Traditional:
+                    <ul>
+                        <li>Color reductions and bold line art</li>
+                        <li>Smooth color gradients</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li> Chrome + American Traditional
+            <ul>
+                <li>Begin working on color adjustments and gradients</li>
+            </ul>
+        </li>
+    </ul>
+    <p>WEEK 4 (5/1-5/4)</p>
+    <ul>
+        <li> Stretch goals
+            <ul>
+                <li>Higher complexity inputs</li>
+                <li>1-2 new tattoo styles</li>
+                <li>Color palette or line weight adjustments</li>
+            </ul>
+        </li>
+        <li> Chrome + American Traditional
+            <ul>
+                <li>Begin working on color adjustments and gradients</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3 align="middle">Resources</h3>
     <p><b>
-        In a few sentences, explain the differences between a pinhole camera model and a thin-lens camera model.
     </b></p>
     <p>
-        Your response goes here.
+        We will be using our original physical-based renderer that uses path tracing algorithms as a starting codebase and make modifications moving forth. All platforms, hardware, and software resources will remain the same as our previous projects, especially project 3. This means we will mainly be building on top of the CGL Vector Library and OpenGL to maintain functionality and visibility of our graphics. All project members have Apple M1 Macs, which to our understanding uses the M1 8-core GPU. We’ll be heavily taking reference to different types of NPR, including Pen and Ink Illustrations and Painterly Rendering, to produce tattoo-esque designs from object inputs.
     </p>
-    <br>
-    <p><b>
-        Show a "focus stack" where you focus at 4 visibly different depths through a scene. Make sure to include all screenshots.
-    </b></p>
+    <ul>
+        <a href=" https://cs184.eecs.berkeley.edu/sp23/docs/proj3-1"> Proj 3-1 </a>
+    </ul>
     <p>
-        Your response goes here.
-    </p>
-    <br>
-    <p><b>
-        Show a sequence of 4 pictures with visibly different aperture sizes, all focused at the same point in a scene. Make sure to include all screenshots.
-    </b></p>
-    <p>
-        Your response goes here.
-    </p>
-    <br>
+        Here are some initial material to help accelerate our understanding of utilizing these rendering techniques:    </p>
+    <ul>
+        <li><a href="https://viterbi-web.usc.edu/~jbarbic/cs420-s22/24-npr/24-npr.pdf"> Deck that goes through types of NPR </a></li>
+        <li><a href="https://www.researchgate.net/publication/236973460_Non-Photorealistic_Rendering">Paper that describes how to achieve various NPR techniques </a></li>
+    </ul>
 
 </div>
 </body>
